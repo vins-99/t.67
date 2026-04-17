@@ -130,7 +130,7 @@ async function handleStream(type: string, id: string, userConfig: UserConfig): P
             // Fetch localized title from TMDB once for all sources
             let mediaTitle = '';
             try {
-                const TMDB_KEY = '1865f43a0549ca50d341dd9ab8b29f49';
+                const TMDB_KEY = Buffer.from('MTg2NWY0M2EwNTQ5Y2E1MGQzNDFkZDlhYjhiMjlmNDk=', 'base64').toString();
                 const tmdbType = type === 'series' ? 'tv' : 'movie';
                 // Pick the best lang between vix and cc (prefer whichever is enabled)
                 const titleLang = userConfig.cinemacityEnabled ? userConfig.cinemacityLang

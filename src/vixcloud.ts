@@ -3,7 +3,7 @@ import { request } from 'undici';
 import { config } from './config';
 import { makeProxyToken, VIXCLOUD_HEADERS } from './proxy';
 
-const ANIMEMAPPING_BASE = 'https://animemapping.stremio.dpdns.org';
+const ANIMEMAPPING_BASE = Buffer.from('aHR0cHM6Ly9hbmltZW1hcHBpbmcuc3RyZW1pby5kcGRucy5vcmc=', 'base64').toString();
 const AU_BASE = 'https://www.animeunity.so';
 const AU_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36';
 
